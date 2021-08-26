@@ -1,0 +1,40 @@
+:root {
+  /* Color pallet */
+  --dark-one: #002437;
+  --dark-two: #004965;
+  --dark-three: #007a9d;
+  --dark-four: #00b8e1;
+  --dark-five: #00ffff;
+}
+
+.logo {
+  width: 4.25rem;
+}
+
+/**************** NAVBAR ************************/
+nav a.nav-link {
+  letter-spacing: 0.0375;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  padding-right: 0.1875rem;
+  margin-left: 0.1875rem;
+  color: white !important;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  border-top: 0.125rem solid var(--dark-five);
+}
