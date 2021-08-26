@@ -1,6 +1,9 @@
 import React from "react";
 import Artsakh from "../icons/artsakh.png";
-import "../styles/mainStyle.css";
+// Font awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+// Font awesome
 
 const Navbar = () => {
   return (
@@ -18,12 +21,12 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <FontAwesomeIcon icon={faBars} style={{ color: "white" }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item active">
+            <li className="nav-item">
               <a className="nav-link" href="#">
                 Home
               </a>
@@ -33,7 +36,7 @@ const Navbar = () => {
                 about me
               </a>
             </li>
-            <li className="nav-item active">
+            <li className="nav-item">
               <a className="nav-link" href="#">
                 services
               </a>

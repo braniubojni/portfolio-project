@@ -26,6 +26,7 @@ nav ul li {
   margin-left: 0.1875rem;
   color: white !important;
   text-decoration: none;
+  border-top: 0.125rem solid #212529;
 }
 
 .navbar-brand {
@@ -35,6 +36,10 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active,
-.navbar-nav > li > a:focus {
+.navbar-nav > li > a.active:focus {
+  border-top: 0.125rem solid var(--dark-five);
+}
+
+.navbar-nav > li > a:hover {
   border-top: 0.125rem solid var(--dark-five);
 }
