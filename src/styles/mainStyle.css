@@ -6,6 +6,9 @@
   --dark-four: #00b8e1;
   --dark-five: #00ffff;
 }
+.bg-dark {
+  background-color: #063c4b !important;
+}
 
 .logo {
   width: 4.25rem;
@@ -26,7 +29,7 @@ nav ul li {
   margin-left: 0.1875rem;
   color: white !important;
   text-decoration: none;
-  border-top: 0.125rem solid #212529;
+  border-top: 0.125rem solid #2f5d91;
 }
 
 .navbar-brand {
@@ -37,9 +40,41 @@ nav ul li {
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
-  border-top: 0.125rem solid var(--dark-five);
+  border-top: 0.125rem solid var(--dark-three);
 }
 
 .navbar-nav > li > a:hover {
   border-top: 0.125rem solid var(--dark-five);
+}
+
+/**************** HEADER ************************/
+
+.header-wrapper {
+  position: relative;
+  background: url(../icons/arch-linux-logo-minimal-art-blue-background-technology.jpeg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-info h1 {
+  color: white;
+  text-transform: uppercase;
+}
+/**************** TYPED TEXT ************************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--dark-one);
+}
+
+.btn-main-offer {
 }
