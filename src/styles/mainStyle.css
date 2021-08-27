@@ -5,9 +5,11 @@
   --dark-three: #007a9d;
   --dark-four: #00b8e1;
   --dark-five: #00ffff;
+  --white-text: #d4f7ec;
+  --typed-dark: #090934;
 }
 .bg-dark {
-  background-color: #063c4b !important;
+  background-color: #024770 !important;
 }
 
 .logo {
@@ -25,11 +27,11 @@ nav ul li {
 }
 
 .navbar-nav > li > a {
-  padding-right: 0.1875rem;
-  margin-left: 0.1875rem;
-  color: white !important;
+  padding-right: 0.8rem;
+  margin-left: 0.8rem;
+  color: var(--white-text) !important;
   text-decoration: none;
-  border-top: 0.125rem solid #2f5d91;
+  border-top: 0.125rem solid #024770;
 }
 
 .navbar-brand {
@@ -48,6 +50,9 @@ nav ul li {
 }
 
 /**************** HEADER ************************/
+nav {
+  z-index: 2;
+}
 
 .header-wrapper {
   position: relative;
@@ -60,21 +65,44 @@ nav ul li {
 
 .main-info {
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  top: 0;
 }
 .main-info h1 {
-  color: white;
+  color: var(--white-text);
   text-transform: uppercase;
 }
 /**************** TYPED TEXT ************************/
 
 .typed-text {
   font-size: 2rem;
-  color: var(--dark-one);
+  color: var(--typed-dark);
 }
 
 .btn-main-offer {
+  border: 1px solid #2e2fe3;
+  text-transform: uppercase;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--white-text);
+  margin: 2rem;
+  text-decoration: none;
+}
+.btn-main-offer:hover {
+  color: var(--white-text);
+}
+
+/**************** PATICLES ************************/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
