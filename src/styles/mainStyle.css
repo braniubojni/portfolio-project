@@ -37,7 +37,7 @@ nav ul li {
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
-  height: 6rem;
+  height: 4rem;
 }
 
 .navbar-nav > li > a.active,
@@ -87,7 +87,7 @@ nav {
 }
 
 .btn-main-offer {
-  border: 1px solid #2e2fe3;
+  border: 1px solid var(--dark-three);
   text-transform: uppercase;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--white-text);
