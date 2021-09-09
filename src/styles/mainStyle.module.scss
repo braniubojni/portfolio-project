@@ -1,0 +1,101 @@
+$dark-one: #002437;
+$dark-two: #004965;
+$dark-three: #007a9d;
+$dark-four: #00b8e1;
+$dark-five: #00ffff;
+$typed-dark: #090934;
+$white-text: #d4f7ec;
+.bgDark {
+  background-color: #024770 !important;
+}
+
+.logo {
+  width: 4.25rem !important;
+}
+
+/**************** NAVBAR ************************/
+.navbarNav a.navLink {
+  letter-spacing: 0.0375;
+  cursor: pointer;
+}
+
+.navbarNav ul li {
+  text-transform: uppercase;
+}
+
+.navbarNav {
+  li {
+    a {
+      text-decoration: none;
+      padding-right: 0.8rem;
+      margin-left: 0.8rem;
+      color: $white-text;
+      border-top: 0.125rem solid #024770;
+    }
+  }
+}
+
+.navbarBrand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 4rem;
+}
+
+.navbarNav > li > a.active,
+.navbarNav > li > a.active:focus {
+  border-top: 0.125rem solid $dark-three;
+}
+
+.navbarNav > li > a:hover {
+  border-top: 0.125rem solid $dark-five;
+}
+
+/**************** HEADER ************************/
+.navbarNav {
+  z-index: 2;
+}
+
+.headerWrapper {
+  position: relative;
+  background: url("../icons/arch-linux-logo-minimal-art-blue-background-technology.jpeg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.mainInfo {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  top: 0;
+}
+.mainInfo h1 {
+  color: $white-text;
+  text-transform: uppercase;
+}
+/**************** TYPED TEXT ************************/
+
+.typedText {
+  font-size: 2rem;
+  color: $typed-dark;
+}
+
+.btnMainOffer {
+  border: 1px solid $dark-three;
+  text-transform: uppercase;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: $white-text;
+  margin: 2rem;
+  text-decoration: none;
+  z-index: 2;
+}
+.btnMainOffer:hover {
+  color: $white-text;
+}

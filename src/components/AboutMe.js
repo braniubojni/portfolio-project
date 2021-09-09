@@ -4,7 +4,7 @@ import ProfileImg from "../icons/I_am.jpg";
 const styles = () => ({
   myInfo: {
     display: "inline-flex",
-    padding: 20,
+    padding: "calc(20px + (50 - 20) * (100vw - 320px) / (1600 - 320))",
     alignContent: "center",
     justifyContent: "center",
   },
@@ -14,14 +14,17 @@ const styles = () => ({
     borderRadius: "1.25rem",
   },
   ProfileImgCont: {
-    marginRight: 22,
+    padding: "calc(20px + (30 - 20) * (100vw - 320px) / (1600 - 320))",
   },
   text: {
-    paddingLeft: "15%",
+    paddingLeft: "4%",
     wordBreak: "break-word",
     alignSelf: "center",
   },
 });
+// 20 is a first size
+// 1600 is a max-width
+// calc(20px + (50 - 20) * (100vw - 320px) / (1600 - 320))
 
 function AboutMe(props) {
   let { classes, appWidth } = props;

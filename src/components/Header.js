@@ -1,13 +1,14 @@
 import React from "react";
 import Typed from "react-typed";
+import classes from "../styles/mainStyle.module.css";
 
 const Header = () => {
   return (
-    <div className="header-wrapper">
-      <div className="main-info">
+    <div className={classes.headerWrapper}>
+      <div className={classes.mainInfo}>
         <h1>skills</h1>
         <Typed
-          className="typed-text"
+          className={classes.typedText}
           strings={[
             "React.js junior developer",
             "HTML/CSS/SCSS",
@@ -20,7 +21,7 @@ const Header = () => {
           backSpeed={60}
           loop
         />
-        <a href="#" className="btn-main-offer">
+        <a href="#" className={classes.btnMainOffer}>
           contact me
         </a>
       </div>

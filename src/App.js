@@ -4,8 +4,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Particles from "react-particles-js";
-import "./styles/mainStyle.css";
-
+import "./styles/particles.css";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
